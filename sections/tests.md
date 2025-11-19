@@ -1,7 +1,5 @@
 # Tests
 
-All forwards in a project are children of an Inbox resource.
-
 Endpoints:
 
 - [Get tests](#get-tests)
