@@ -1,6 +1,7 @@
 # The Light Labs API
 
-Welcome to the Light Labs API! 
+Welcome to the Light Labs API!
+
 If you're looking to integrate your application with Light Labs or create your own application in concert with data inside of Light Labs, you're in the right place. We're happy to have you!
 
 ## Authentication
@@ -31,15 +32,19 @@ Paginated responses include a pagination object containing navigation links and 
 
 | Attribute | Description |
 | :--- | :--- |
-| `per_page` | The number of items returned in the current request. |
+| `per_page` | The number of items returned in the current request. (default: 20) |
 | `current_page` | The page number of the current result set. |
 | `prev_page` | The page number of the previous page. Returns `null` if there is no previous page. |
 | `next_page` | The page number of the next page. Returns `null` if there is no next page. |
+
+
+To navigate between pages, include a `page` query parameter in your request (e.g., `GET /api/products?page=2`).
 
 ## API endpoints
 
 - [Orders](./sections/orders.md)
 - [Products](./sections/products.md)
+- [SKUs (Variants)](./sections/skus.md)
 - [Tests](./sections/tests.md)
 
 ## Getting help
