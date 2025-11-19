@@ -1,6 +1,7 @@
 # The Light Labs API
 
 Welcome to the Light Labs API!
+
 If you're looking to integrate your application with Light Labs or create your own application in concert with data inside of Light Labs, you're in the right place. We're happy to have you!
 
 ## Authentication
@@ -10,14 +11,6 @@ Read the [authentication guide](./sections/authentication.md) to get started.
 ## Pagination
 
 Endpoints that return lists of resources are paginated to improve performance and response times. The pagination metadata is included in the response to help you navigate the result set.
-
-Paginated endpoints return a `data` array containing the items for the current page, along with a `pagination` object that includes:
-- `per_page`: The number of items returned per page (default: 20)
-- `current_page`: The current page number
-- `prev_page`: The previous page number (null if on the first page)
-- `next_page`: The next page number (null if on the last page)
-
-To navigate between pages, include a `page` query parameter in your request (e.g., `GET /api/products?page=2`).
 
 #### Response Structure
 Paginated responses include a pagination object containing navigation links and current status.
@@ -39,10 +32,13 @@ Paginated responses include a pagination object containing navigation links and 
 
 | Attribute | Description |
 | :--- | :--- |
-| `per_page` | The number of items returned in the current request. |
+| `per_page` | The number of items returned in the current request. (default: 20) |
 | `current_page` | The page number of the current result set. |
 | `prev_page` | The page number of the previous page. Returns `null` if there is no previous page. |
 | `next_page` | The page number of the next page. Returns `null` if there is no next page. |
+
+
+To navigate between pages, include a `page` query parameter in your request (e.g., `GET /api/products?page=2`).
 
 ## API endpoints
 
