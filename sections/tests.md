@@ -7,7 +7,7 @@ Endpoints:
 
 ## Get tests
 
-* `GET /api/1/tests` will return a paginated list of tests for the company with an ID of `1`.
+* `GET /api/1/tests` will return a [paginated list](../README.md#pagination) of tests for the company with an ID of `1`.
 
 ###### Example JSON Response
 
