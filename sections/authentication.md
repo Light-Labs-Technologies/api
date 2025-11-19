@@ -23,6 +23,8 @@ Authorization: Bearer <YOUR_API_KEY>
 ### Example Request
 Here is an example of how to structure a curl request using the authentication header:
 
+###### Copy as cURL
+
 ```shell
 curl -X GET https://app.lightlabs.com/api/tests \
   -H "Authorization: Bearer <YOUR_API_TOKEN>" \
