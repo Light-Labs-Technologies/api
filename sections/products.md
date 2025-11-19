@@ -69,9 +69,9 @@ Endpoints:
 	],
 	"pagination": {
 		"per_page": 20,
-		"current_page": 2,
-		"prev_page": 1,
-		"next_page": 3
+		"current_page": 1,
+		"prev_page": null,
+		"next_page": 2
 	}
 }
 ```
