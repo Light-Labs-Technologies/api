@@ -7,7 +7,7 @@ Endpoints:
 
 ## Get orders
 
-* `GET /api/1/orders` will return a paginated list of orders for the company with an ID of `1`.
+* `GET /api/1/orders` will return a [paginated list](../README.md#pagination) of orders for the company with an ID of `1`.
 
 ###### Example JSON Response
 
