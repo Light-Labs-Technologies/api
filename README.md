@@ -12,3 +12,7 @@ Read the [authentication guide](./sections/authentication.md) to get started.
 - [Orders](./sections/orders.md)
 - [Products](./sections/products.md)
 - [Tests](./sections/tests.md)
+
+## Getting help
+
+If you have a question about the API, please open a [support ticket](https://app.lightlabs.com/support_requests/new).
