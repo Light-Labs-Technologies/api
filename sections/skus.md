@@ -13,7 +13,7 @@ Endpoints:
 
 ```json
 {
-	"data": [
+	"skus": [
 		{
 			"id": 15,
 			"name": "Aerodynamic Plastic Coat",

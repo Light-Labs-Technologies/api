@@ -13,7 +13,7 @@ Endpoints:
 
 ```json
 {
-	"data": [
+	"products": [
 		{
 			"id": 5,
 			"name": "Apple",
