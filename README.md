@@ -9,6 +9,8 @@ Read the [authentication guide](./sections/authentication.md) to get started.
 
 ## Pagination
 
+Endpoints that return lists of resources are paginated to improve performance and response times. The pagination metadata is included in the response to help you navigate the result set.
+
 Paginated endpoints return a `data` array containing the items for the current page, along with a `pagination` object that includes:
 - `per_page`: The number of items returned per page (default: 20)
 - `current_page`: The current page number
@@ -16,6 +18,31 @@ Paginated endpoints return a `data` array containing the items for the current p
 - `next_page`: The next page number (null if on the last page)
 
 To navigate between pages, include a `page` query parameter in your request (e.g., `GET /api/products?page=2`).
+
+#### Response Structure
+Paginated responses include a pagination object containing navigation links and current status.
+
+
+```
+{
+  ...,
+  "pagination": {
+    "per_page": 20,
+    "current_page": 1,
+    "prev_page": null,
+    "next_page": 2
+  }
+}
+```
+
+#### Pagination Object Attributes
+
+| Attribute | Description |
+| :--- | :--- |
+| `per_page` | The number of items returned in the current request. |
+| `current_page` | The page number of the current result set. |
+| `prev_page` | The page number of the previous page. Returns `null` if there is no previous page. |
+| `next_page` | The page number of the next page. Returns `null` if there is no next page. |
 
 ## API endpoints
 
