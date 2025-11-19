@@ -15,9 +15,9 @@ Endpoints that return lists of resources are paginated to improve performance an
 Paginated responses include a pagination object containing navigation links and current status.
 
 
-```json
+```
 {
-  ...
+  ...,
   "pagination": {
     "per_page": 20,
     "current_page": 1,
@@ -29,11 +29,12 @@ Paginated responses include a pagination object containing navigation links and 
 
 #### Pagination Object Attributes
 
-Attribute,Type,Description
-per_page,Integer,The number of items returned in the current request.
-current_page,Integer,The page number of the current result set.
-prev_page,Integer,Null
-next_page,Integer,Null
+| Attribute | Description |
+| :--- | :--- |
+| `per_page` | The number of items returned in the current request. |
+| `current_page` | The page number of the current result set. |
+| `prev_page` | The page number of the previous page. Returns `null` if there is no previous page. |
+| `next_page` | The page number of the next page. Returns `null` if there is no next page. |
 
 ## API endpoints
 
