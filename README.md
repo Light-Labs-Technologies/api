@@ -7,6 +7,10 @@ If you're looking to integrate your application with Light Labs or create your o
 
 Read the [authentication guide](./sections/authentication.md) to get started.
 
+## Pagination
+
+TBD
+
 ## API endpoints
 
 - [Orders](./sections/orders.md)
