@@ -6,7 +6,7 @@ Endpoints:
 
 ## Get products
 
-* `GET /api/1/products` will return a paginated list of products for the company with an ID of `1`.
+* `GET /api/1/products` will return a [paginated list](../README.md#pagination) of products for the company with an ID of `1`.
 
 ###### Example JSON Response
 
