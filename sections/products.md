@@ -21,9 +21,6 @@ Endpoints:
 			"supplier": "Acme Inc.",
 			"product_type": "raw_material",
 			"shelf_life": null,
-			"lot_lookup_enabled": false,
-			"pdp_embed_enabled": false,
-			"show_limits_on_pip": false,
 			"created_at": "2025-11-12T19:57:37.904Z",
 			"updated_at": "2025-11-12T19:57:37.904Z"
 		},
@@ -34,9 +31,6 @@ Endpoints:
 			"supplier": null,
 			"product_type": "finished_good",
 			"shelf_life": null,
-			"lot_lookup_enabled": true,
-			"pdp_embed_enabled": true,
-			"show_limits_on_pip": false,
 			"created_at": "2025-11-05T13:18:56.934Z",
 			"updated_at": "2025-11-05T13:18:56.934Z"
 		},
@@ -47,9 +41,6 @@ Endpoints:
 			"supplier": "Acme Inc.",
 			"product_type": "raw_material",
 			"shelf_life": null,
-			"lot_lookup_enabled": false,
-			"pdp_embed_enabled": false,
-			"show_limits_on_pip": false,
 			"created_at": "2025-11-13T18:23:40.475Z",
 			"updated_at": "2025-11-13T18:23:40.475Z"
 		},
@@ -60,9 +51,6 @@ Endpoints:
 			"supplier": null,
 			"product_type": "finished_good",
 			"shelf_life": null,
-			"lot_lookup_enabled": true,
-			"pdp_embed_enabled": true,
-			"show_limits_on_pip": false,
 			"created_at": "2025-11-05T13:18:56.907Z",
 			"updated_at": "2025-11-05T13:18:56.907Z"
 		}
@@ -96,9 +84,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/p
 	"supplier": null,
 	"product_type": "finished_good",
 	"shelf_life": null,
-	"lot_lookup_enabled": true,
-	"pdp_embed_enabled": true,
-	"show_limits_on_pip": false,
 	"created_at": "2025-11-05T13:18:56.907Z",
 	"updated_at": "2025-11-05T13:18:56.907Z",
 	"skus": [
