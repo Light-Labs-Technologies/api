@@ -158,7 +158,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 		}
 	}
 }
-}
 ```
 
 ###### Copy as cURL
