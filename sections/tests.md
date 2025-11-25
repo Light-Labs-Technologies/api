@@ -5,6 +5,18 @@ Endpoints:
 - [Get tests](#get-tests)
 - [Show test](#show-test)
 
+## Deprecation Notice
+
+Some attributes in these responses are currently being deprecated for consistency. While both the legacy and new attributes are available at this time to maintain backward compatibility, support for the legacy fields will be removed in a future release. Please, make sure to use the new attributes.
+
+Please refer to the table below to map the fields that require updates in your integration:
+
+| Deprecated Field | Replacement Field | Type | Notes |
+| :--- | :--- | :--- | :--- |
+| `spec_status` | `specification` | String | Renamed for consistency. The value format remains the same. |
+| `results[spec_result]` | `results[specification]` | String ||
+| `results[limit_value]` | `results[limit]` | String ||
+
 
 ## Get tests
 
