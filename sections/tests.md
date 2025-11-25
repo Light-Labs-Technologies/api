@@ -24,6 +24,7 @@ Endpoints:
 			"published_at": "2025-11-20T01:11:02.360Z",
 			"created_at": "2025-11-18T15:26:25.207Z",
 			"updated_at": "2025-11-20T01:34:05.304Z",
+            "specification": "no_spec",
 			"assay": {
 				"id": 1,
 				"name": "Heavy Metals"
@@ -36,7 +37,9 @@ Endpoints:
 					},
 					"result": "-",
 					"spec_result": "no_spec",
-					"limit_value": "-"
+                    "specification": "no_spec",
+					"limit_value": "-",
+                    "limit": "-"
 				},
 				{
 					"analyte": {
@@ -45,7 +48,9 @@ Endpoints:
 					},
 					"result": "-",
 					"spec_result": "no_spec",
-					"limit_value": "-"
+                    "specification": "no_spec",
+					"limit_value": "-",
+                    "limit": "-"
 				},
 			],
 			"sample": {
@@ -94,7 +99,6 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 
 ```json
 {
-{
 	"id": 678,
 	"status": "not_started",
 	"spec_status": "no_spec",
@@ -103,6 +107,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 	"published_at": "2025-11-20T01:11:02.360Z",
 	"created_at": "2025-11-18T15:26:25.207Z",
 	"updated_at": "2025-11-20T01:34:05.304Z",
+    "specification": "no_spec",
 	"assay": {
 		"id": 1,
 		"name": "Heavy Metals"
@@ -115,7 +120,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 			},
 			"result": "-",
 			"spec_result": "no_spec",
-			"limit_value": "-"
+            "specification": "no_spec",
+			"limit_value": "-",
+            "limit": "-"
 		},
 		{
 			"analyte": {
@@ -124,7 +131,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 			},
 			"result": "-",
 			"spec_result": "no_spec",
-			"limit_value": "-"
+            "specification": "no_spec",
+			"limit_value": "-",
+            "limit": "-"
 		},
 	],
 	"sample": {
