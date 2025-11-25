@@ -14,8 +14,8 @@ Please refer to the table below to map the fields that require updates in your i
 | Deprecated Field | Replacement Field | Type | Notes |
 | :--- | :--- | :--- | :--- |
 | `spec_status` | `specification` | String | Renamed for consistency. The value format remains the same. |
-| `results[spec_result]` | `results[specification]` | String ||
-| `results[limit_value]` | `results[limit]` | String ||
+| `results[spec_result]` | `results[specification]` | String | Renamed for consistency. The value format remains the same. |
+| `results[limit_value]` | `results[limit]` | String | Renamed for consistency. The value format remains the same. |
 
 
 ## Get tests
