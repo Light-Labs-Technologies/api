@@ -40,6 +40,24 @@ Paginated responses include a pagination object containing navigation links and 
 
 To navigate between pages, include a `page` query parameter in your request (e.g., `GET /api/products?page=2`).
 
+## Rate Limiting
+
+To ensure fair usage and service stability, our API implements rate limiting.
+
+### Limits
+
+- **300 requests per minute** per API key
+
+### Exceeded Limit Response
+
+When you exceed the rate limit, the API returns:
+
+- **Status:** `429 Too Many Requests`
+- **Header:** `Retry-After: 60`
+- **Body:** `{ "error": "Rate limit exceeded. Retry after 60 seconds." }`
+
+Wait for the time indicated in the `Retry-After` header before retrying your request.
+
 ## API endpoints
 
 - [Orders](./sections/orders.md)
