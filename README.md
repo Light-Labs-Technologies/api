@@ -52,11 +52,15 @@ To ensure fair usage and service stability, our API implements rate limiting.
 
 When you exceed the rate limit, the API returns:
 
+```
 HTTP/1.1 429 Too Many Requests
 Retry-After: 60
 Content-Type: application/json
 
-{ "error": "Rate limit exceeded. Retry after 60 seconds." }Wait for the time indicated in the `Retry-After` header before retrying your request.
+{ "error": "Rate limit exceeded. Retry after 60 seconds." }
+```
+
+Wait for the time indicated in the `Retry-After` header before retrying your request.
 
 ## API endpoints
 
