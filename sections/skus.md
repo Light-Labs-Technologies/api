@@ -19,6 +19,7 @@ Endpoints:
 			"name": "Aerodynamic Plastic Coat",
 			"code": "StellarSale910341",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 1,
 				"name": "Protein Powder"
@@ -29,6 +30,7 @@ Endpoints:
 			"name": "Apple Strawberry",
 			"code": "BB-AS",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -39,6 +41,7 @@ Endpoints:
 			"name": "Awesome Granite Chair",
 			"code": "PremiumSale866518",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 1,
 				"name": "Protein Powder"
@@ -49,6 +52,7 @@ Endpoints:
 			"name": "Banana",
 			"code": "BB-BA",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -59,6 +63,7 @@ Endpoints:
 			"name": "Banana Blueberry",
 			"code": "BB-BL",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -69,6 +74,7 @@ Endpoints:
 			"name": "Beef Stew",
 			"code": "BB-BS",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -79,6 +85,7 @@ Endpoints:
 			"name": "Blueberry",
 			"code": "BB-BB",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -89,6 +96,7 @@ Endpoints:
 			"name": "Chicken & Peas",
 			"code": "BB-CNP",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 2,
 				"name": "Baby Food"
@@ -99,6 +107,7 @@ Endpoints:
 			"name": "Chocolate",
 			"code": "PROPOW-CHOC",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 1,
 				"name": "Protein Powder"
@@ -109,6 +118,7 @@ Endpoints:
 			"name": "Cookies and Cream",
 			"code": "PROPOW-COOKIES",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 1,
 				"name": "Protein Powder"
@@ -119,6 +129,7 @@ Endpoints:
 			"name": "Banana",
 			"code": "",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 8,
 				"name": "Banana"
@@ -129,6 +140,7 @@ Endpoints:
 			"name": "Apple",
 			"code": "",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 5,
 				"name": "Apple"
@@ -139,6 +151,7 @@ Endpoints:
 			"name": "Durable Bronze Bag",
 			"code": "AmazingDeal370523",
 			"serving_size_grams": null,
+			"supplier": null,
 			"product": {
 				"id": 1,
 				"name": "Protein Powder"
@@ -172,6 +185,7 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/s
 	"name": "Vanilla",
 	"code": "PROPOW-VAN",
 	"serving_size_grams": null,
+	"supplier": null,
 	"product": {
 		"id": 1,
 		"name": "Protein Powder",
