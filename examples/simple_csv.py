@@ -66,14 +66,14 @@ class SimplifiedCSVWriter:
             row = {
                 'Test ID': test.get("id"), 
                 'Status': test.get("status"), 
-                'Ordered At': None, 
-                'Orderer': None, 
+                'Ordered At': test.get("sample").get("order").get("ordered_at"), 
+                'Orderer': test.get("sample").get("order").get("orderer").get("name"), 
                 'Product': test.get("sample").get("sku").get("product").get("name"), 
                 'Variant': test.get("sample").get("sku").get("name"), 
                 'Code': test.get("sample").get("sku").get("code"),
                 'Lot': test.get("sample").get("lot"), 
                 'Assay': test.get("assay").get("name"), 
-                'Notes': None, 
+                'Notes': test.get("notes"), 
             } | dynamic_fields
 
             writer.writerow(row)

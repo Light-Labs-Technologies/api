@@ -36,7 +36,8 @@ Please refer to the table below to map the fields that require updates in your i
 			"published_at": "2025-11-20T01:11:02.360Z",
 			"created_at": "2025-11-18T15:26:25.207Z",
 			"updated_at": "2025-11-20T01:34:05.304Z",
-      "specification": "no_spec",
+			"specification": "no_spec",
+			"notes": "",
 			"assay": {
 				"id": 1,
 				"name": "Heavy Metals"
@@ -49,9 +50,9 @@ Please refer to the table below to map the fields that require updates in your i
 					},
 					"result": "-",
 					"spec_result": "no_spec",
-          "specification": "no_spec",
+					"specification": "no_spec",
 					"limit_value": "-",
-          "limit": "-"
+					"limit": "-"
 				},
 				{
 					"analyte": {
@@ -60,9 +61,9 @@ Please refer to the table below to map the fields that require updates in your i
 					},
 					"result": "-",
 					"spec_result": "no_spec",
-          "specification": "no_spec",
+					"specification": "no_spec",
 					"limit_value": "-",
-          "limit": "-" 
+					"limit": "-" 
 				},
 			],
 			"sample": {
@@ -83,7 +84,11 @@ Please refer to the table below to map the fields that require updates in your i
 				"order": {
 					"id": 54,
 					"status": "created",
-					"ordered_at": "2025-11-18T15:26:00.000Z"
+					"ordered_at": "2025-11-18T15:26:00.000Z",
+					"orderer": {
+						"email": "no-reply@lightlabs.com",
+						"name": "John Doe"
+					}
 				}
 			}
 		}
@@ -119,7 +124,8 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 	"published_at": "2025-11-20T01:11:02.360Z",
 	"created_at": "2025-11-18T15:26:25.207Z",
 	"updated_at": "2025-11-20T01:34:05.304Z",
-  "specification": "no_spec",
+	"specification": "no_spec",
+	"notes": "",
 	"assay": {
 		"id": 1,
 		"name": "Heavy Metals"
@@ -132,9 +138,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 			},
 			"result": "-",
 			"spec_result": "no_spec",
-      "specification": "no_spec",
+			"specification": "no_spec",
 			"limit_value": "-",
-      "limit": "-"
+      		"limit": "-"
 		},
 		{
 			"analyte": {
@@ -143,9 +149,9 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 			},
 			"result": "-",
 			"spec_result": "no_spec",
-      "specification": "no_spec",
+			"specification": "no_spec",
 			"limit_value": "-",
-      "limit": "-"
+			"limit": "-"
 		},
 	],
 	"sample": {
@@ -166,7 +172,11 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 		"order": {
 			"id": 54,
 			"status": "created",
-			"ordered_at": "2025-11-18T15:26:00.000Z"
+			"ordered_at": "2025-11-18T15:26:00.000Z",
+			"orderer": {
+				"email": "no-reply@lightlabs.com",
+				"name": "John Doe"
+			}
 		}
 	}
 }
