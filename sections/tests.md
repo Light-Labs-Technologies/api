@@ -84,7 +84,11 @@ Please refer to the table below to map the fields that require updates in your i
 				"order": {
 					"id": 54,
 					"status": "created",
-					"ordered_at": "2025-11-18T15:26:00.000Z"
+					"ordered_at": "2025-11-18T15:26:00.000Z",
+					"orderer": {
+						"email": "dev@lightlabs.com",
+						"name": "José Anchieta"
+					}
 				}
 			}
 		}
@@ -168,7 +172,11 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 		"order": {
 			"id": 54,
 			"status": "created",
-			"ordered_at": "2025-11-18T15:26:00.000Z"
+			"ordered_at": "2025-11-18T15:26:00.000Z",
+			"orderer": {
+						"email": "dev@lightlabs.com",
+						"name": "José Anchieta"
+            }
 		}
 	}
 }
