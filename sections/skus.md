@@ -237,6 +237,10 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/s
 	"name": "Vanilla",
 	"code": "PROPOW-VAN",
 	"serving_size_grams": null,
+    "serving_size": {
+      "value": 2,
+	  "unit": "capsules"
+     },
 	"supplier": null,
 	"product": {
 		"id": 1,
