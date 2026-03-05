@@ -13,157 +13,209 @@ Endpoints:
 
 ```json
 {
-	"skus": [
-		{
-			"id": 15,
-			"name": "Aerodynamic Plastic Coat",
-			"code": "StellarSale910341",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 1,
-				"name": "Protein Powder"
-			}
-		},
-		{
-			"id": 14,
-			"name": "Apple Strawberry",
-			"code": "BB-AS",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 23,
-			"name": "Awesome Granite Chair",
-			"code": "PremiumSale866518",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 1,
-				"name": "Protein Powder"
-			}
-		},
-		{
-			"id": 11,
-			"name": "Banana",
-			"code": "BB-BA",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 13,
-			"name": "Banana Blueberry",
-			"code": "BB-BL",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 8,
-			"name": "Beef Stew",
-			"code": "BB-BS",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 9,
-			"name": "Blueberry",
-			"code": "BB-BB",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 6,
-			"name": "Chicken & Peas",
-			"code": "BB-CNP",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 2,
-				"name": "Baby Food"
-			}
-		},
-		{
-			"id": 2,
-			"name": "Chocolate",
-			"code": "PROPOW-CHOC",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 1,
-				"name": "Protein Powder"
-			}
-		},
-		{
-			"id": 4,
-			"name": "Cookies and Cream",
-			"code": "PROPOW-COOKIES",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 1,
-				"name": "Protein Powder"
-			}
-		},
-		{
-			"id": 31,
-			"name": "Banana",
-			"code": "",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 8,
-				"name": "Banana"
-			}
-		},
-		{
-			"id": 27,
-			"name": "Apple",
-			"code": "",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 5,
-				"name": "Apple"
-			}
-		},
-		{
-			"id": 21,
-			"name": "Durable Bronze Bag",
-			"code": "AmazingDeal370523",
-			"serving_size_grams": null,
-			"supplier": null,
-			"product": {
-				"id": 1,
-				"name": "Protein Powder"
-			}
-		},
-	],
-	"pagination": {
-		"per_page": 20,
-		"current_page": 1,
-		"prev_page": null,
-		"next_page": 2
-	}
+      "skus": [
+          {
+              "id": 15,
+              "name": "Aerodynamic Plastic Coat",
+              "code": "StellarSale910341",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": 2,
+                  "unit": "capsules"
+              },
+              "supplier": null,
+              "product": {
+                  "id": 1,
+                  "name": "Protein Powder"
+              }
+          },
+          {
+              "id": 14,
+              "name": "Apple Strawberry",
+              "code": "BB-AS",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": 100,
+                  "unit": "mL"
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 23,
+              "name": "Awesome Granite Chair",
+              "code": "PremiumSale866518",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 1,
+                  "name": "Protein Powder"
+              }
+          },
+          {
+              "id": 11,
+              "name": "Banana",
+              "code": "BB-BA",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 13,
+              "name": "Banana Blueberry",
+              "code": "BB-BL",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 8,
+              "name": "Beef Stew",
+              "code": "BB-BS",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 9,
+              "name": "Blueberry",
+              "code": "BB-BB",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 6,
+              "name": "Chicken & Peas",
+              "code": "BB-CNP",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 2,
+                  "name": "Baby Food"
+              }
+          },
+          {
+              "id": 2,
+              "name": "Chocolate",
+              "code": "PROPOW-CHOC",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 1,
+                  "name": "Protein Powder"
+              }
+          },
+          {
+              "id": 4,
+              "name": "Cookies and Cream",
+              "code": "PROPOW-COOKIES",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 1,
+                  "name": "Protein Powder"
+              }
+          },
+          {
+              "id": 31,
+              "name": "Banana",
+              "code": "",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 8,
+                  "name": "Banana"
+              }
+          },
+          {
+              "id": 27,
+              "name": "Apple",
+              "code": "",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 5,
+                  "name": "Apple"
+              }
+          },
+          {
+              "id": 21,
+              "name": "Durable Bronze Bag",
+              "code": "AmazingDeal370523",
+              "serving_size_grams": null,
+              "serving_size": {
+                  "value": null,
+                  "unit": null
+              },
+              "supplier": null,
+              "product": {
+                  "id": 1,
+                  "name": "Protein Powder"
+              }
+          }
+      ],
+      "pagination": {
+          "per_page": 20,
+          "current_page": 1,
+          "prev_page": null,
+          "next_page": 2
+      }
 }
 ```
 
