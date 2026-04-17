@@ -1,7 +1,9 @@
-import requests
 import csv
 import os
 import sys
+
+import requests
+
 
 class LightLabsClient:
     def __init__(self, api_key, url="https://app.lightlabs.com"):
@@ -9,13 +11,16 @@ class LightLabsClient:
         self.api_key = api_key
         self.headers = {
             "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         }
 
     def get_tests(self, page=1):
-        response = requests.get(f"{self.url}/api/tests", headers=self.headers, params={"page": page})
+        response = requests.get(
+            f"{self.url}/api/tests", headers=self.headers, params={"page": page}
+        )
         response.raise_for_status()
         return response.json()
+
 
 class PaginatingLightLabsClient:
     def __init__(self, client):
@@ -33,6 +38,7 @@ class PaginatingLightLabsClient:
             page = next_page
         return tests
 
+
 class SimplifiedCSVWriter:
     def __init__(self, out):
         self.out = out
@@ -42,12 +48,22 @@ class SimplifiedCSVWriter:
         for test in tests:
             for result in test.get("results", []):
                 fields.add(result.get("analyte").get("name"))
+            for custom_field in test.get("custom_fields", []):
+                fields.add(custom_field.get("name"))
         return list(fields)
-    
+
     def _fixed_fields(self):
         return [
-            "Test ID", "Status", "Ordered At", "Orderer", "Product", "Variant", 
-            "Code", "Lot", "Assay", "Notes"
+            "Test ID",
+            "Status",
+            "Ordered At",
+            "Orderer",
+            "Product",
+            "Variant",
+            "Code",
+            "Lot",
+            "Assay",
+            "Notes",
         ]
 
     def _fields(self, tests):
@@ -62,18 +78,20 @@ class SimplifiedCSVWriter:
             for result in test.get("results", []):
                 analyte = result.get("analyte").get("name")
                 dynamic_fields[analyte] = result.get("result")
+            for custom_field in test.get("custom_fields", []):
+                dynamic_fields[custom_field.get("name")] = custom_field.get("value")
 
             row = {
-                'Test ID': test.get("id"), 
-                'Status': test.get("status"), 
-                'Ordered At': test.get("sample").get("order").get("ordered_at"), 
-                'Orderer': test.get("sample").get("order").get("orderer").get("name"), 
-                'Product': test.get("sample").get("sku").get("product").get("name"), 
-                'Variant': test.get("sample").get("sku").get("name"), 
-                'Code': test.get("sample").get("sku").get("code"),
-                'Lot': test.get("sample").get("lot"), 
-                'Assay': test.get("assay").get("name"), 
-                'Notes': test.get("notes"), 
+                "Test ID": test.get("id"),
+                "Status": test.get("status"),
+                "Ordered At": test.get("sample").get("order").get("ordered_at"),
+                "Orderer": test.get("sample").get("order").get("orderer").get("name"),
+                "Product": test.get("sample").get("sku").get("product").get("name"),
+                "Variant": test.get("sample").get("sku").get("name"),
+                "Code": test.get("sample").get("sku").get("code"),
+                "Lot": test.get("sample").get("lot"),
+                "Assay": test.get("assay").get("name"),
+                "Notes": test.get("notes"),
             } | dynamic_fields
 
             writer.writerow(row)

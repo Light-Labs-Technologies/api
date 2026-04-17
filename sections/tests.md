@@ -17,6 +17,17 @@ Please refer to the table below to map the fields that require updates in your i
 | `results[spec_result]` | `results[specification]` | String | Renamed for consistency. The value format remains the same. |
 | `results[limit_value]` | `results[limit]` | String | Renamed for consistency. The value format remains the same. |
 
+## Custom Fields
+
+Tests include a `custom_fields` array containing any custom fields your company has defined for the `Test` resource. Each entry has the following attributes:
+
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| `key` | String | The machine-readable identifier of the custom field (e.g., `metafield_batch_id`). |
+| `name` | String | The human-readable name of the custom field (e.g., `Batch ID`). |
+| `value` | String | The value set for this test. |
+
+If the test has no custom fields, `custom_fields` will be an empty array (`[]`).
 
 ## Get tests
 
@@ -39,6 +50,18 @@ Please refer to the table below to map the fields that require updates in your i
 			"updated_at": "2025-11-20T01:34:05.304Z",
 			"specification": "no_spec",
 			"notes": "",
+			"custom_fields": [
+				{
+					"key": "metafield_batch_id",
+					"name": "Batch ID",
+					"value": "B-1234",
+				},
+				{
+					"key": "metafield_priority",
+					"name": "Priority",
+					"value": "High",
+				}
+			],
 			"assay": {
 				"id": 1,
 				"name": "Heavy Metals"
@@ -128,6 +151,18 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 	"updated_at": "2025-11-20T01:34:05.304Z",
 	"specification": "no_spec",
 	"notes": "",
+	"custom_fields": [
+		{
+			"key": "metafield_batch_id",
+			"name": "Batch ID",
+			"value": "B-1234",
+		},
+		{
+			"key": "metafield_priority",
+			"name": "Priority",
+			"value": "High",
+		}
+	],
 	"assay": {
 		"id": 1,
 		"name": "Heavy Metals"
