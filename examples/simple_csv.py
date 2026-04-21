@@ -44,13 +44,17 @@ class SimplifiedCSVWriter:
         self.out = out
 
     def _dynamic_fields(self, tests: list) -> list:
-        fields = set()
+        analytes, custom_fields = [], []
         for test in tests:
             for result in test.get("results", []):
-                fields.add(result.get("analyte").get("name"))
+                name = result.get("analyte").get("name")
+                if name not in analytes:
+                    analytes.append(name)
             for custom_field in test.get("custom_fields", []):
-                fields.add(custom_field.get("name"))
-        return list(fields)
+                name = custom_field.get("name")
+                if name not in custom_fields:
+                    custom_fields.append(name)
+        return sorted(analytes) + sorted(custom_fields)
 
     def _fixed_fields(self):
         return [
