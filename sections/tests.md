@@ -155,13 +155,13 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://app.lightlabs.com/api/t
 
 ## Show test
 
-* `GET /api/1/tests` will return the test with ID 1 for the authenticated company. It returns all the necessary information about the test including its results.
+* `GET /api/tests/1` will return the test with ID 1 for the authenticated company. It returns all the necessary information about the test including its results.
 
 ###### Example JSON Response
 
 ```json
 {
-  "id": 678,
+  "id": 1,
   "status": "not_started",
   "spec_status": "no_spec",
   "start_date": null,
